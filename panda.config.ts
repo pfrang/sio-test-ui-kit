@@ -1,7 +1,7 @@
 import { defineConfig } from '@pandacss/dev'
-// import { sioPreset } from '@sio-it/ui-kit'
+import { sioPreset } from '@sio-it/ui-kit/preset'
 export default defineConfig({
-  presets: [],
+  presets: [sioPreset],
   // eject: true,
   preflight: false,
   jsxFramework: 'react',
