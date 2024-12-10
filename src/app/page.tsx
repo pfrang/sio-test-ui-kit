@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Spacer />
-      <Button onClick={handleClick} variant="primary">Clic kme</Button>
+      <Button variant="primary">Hei</Button>
     </>
   );
 }
