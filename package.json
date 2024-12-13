@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@pandacss/dev": "^0.48.1",
+    "@sio-it/ui-kit": "file:../ui-kit/sio-it-ui-kit-0.0.6.tgz",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106"
@@ -24,9 +25,5 @@
     "ignore-loader": "^0.1.2",
     "install": "^0.13.0",
     "typescript": "^5"
-  },
-  "resolutions": {
-    "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
   }
 }
