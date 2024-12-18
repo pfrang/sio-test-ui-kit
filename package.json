@@ -7,11 +7,12 @@
     "dev": "npm run clean && next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "setup": "npm remove @sio-ui/ui-kit && npm uninstall @sio-it/ui-kit && npm install ../ui-kit/sio-it-ui-kit-0.0.8.tgz"
   },
   "dependencies": {
     "@pandacss/dev": "^0.48.1",
-    "@sio-it/ui-kit": "file:../ui-kit/sio-it-ui-kit-0.0.6.tgz",
+    "@sio-it/ui-kit": "file:../ui-kit/sio-it-ui-kit-0.0.8.tgz",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106"
@@ -24,6 +25,6 @@
     "eslint-config-next": "15.0.3",
     "ignore-loader": "^0.1.2",
     "install": "^0.13.0",
-    "typescript": "^5"
+    "typescript": "5.3.3"
   }
 }
