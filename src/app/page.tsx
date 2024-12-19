@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Spacer paddingTop={4} />
-      <Button variant="primary">Hei</Button>
+      <Button color={"green.10"} padding={12} width={9} variant="primary">Hei2</Button>
       <Text>Hei</Text>
     </>
   );
