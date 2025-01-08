@@ -1,4 +1,4 @@
-import { Button, Icon,  Spacer, Text } from "@sio-it/ui-kit"
+import { Button, Icon,  Spacer, Text, Tooltip } from "@sio-it/ui-kit"
 import { ClientComponents } from "./client-components";
 export default function Home() {
 
@@ -11,8 +11,11 @@ export default function Home() {
     <>
       <Spacer paddingTop={4} />
       <Button onClick={handleClick} color={"green.10"} padding={12} width={9} variant="primary" >Hei2</Button>
-      <Text variant="button">Hei</Text>
+      <Text tag="h3" variant="button">Hei</Text>
       <Icon title="something" name="ArrowDown" color="#2EC961" height={20}/>
+      <Tooltip direction="right" size="medium" variant="dark">
+        hehiehi
+      </Tooltip>
       <ClientComponents/>
 
       {/* <Icons.ArrowDown color="#2EC961" /> */}
