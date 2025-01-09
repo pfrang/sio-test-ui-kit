@@ -1,6 +1,6 @@
 "use client"
 
-import { TextInput  } from "@sio-it/ui-kit"
+import { DatePicker, TextInput  } from "@sio-it/ui-kit"
 import {  useState } from "react"
 
 export const ClientComponents = () => {
@@ -14,8 +14,12 @@ export const ClientComponents = () => {
   return(
     <>
       {/* <input type="text" value={value} onChange={handler}/> */}
-      <TextInput name="hei" onChange={handler} value={value} />
-      {/* <TextareaInput name="hei" onChange={handler} value={value}/> */}
+      <TextInput type="date" name="hei" onChange={handler} value={value} />
+      <DatePicker isDateBlocked={(date) => {
+        return false
+      }} onChange={(date) => {
+        console.log(date)}
+      } />
     </>
   )
 }
