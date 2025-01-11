@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Spacer paddingTop={4} />
       <Button onClick={handleClick} color={"green.10"} padding={12} width={9} variant="primary" >Hei2</Button>
-      <Text tag="h3" variant="button">Hei</Text>
+      <Text tag="h3" padding={'1'} variant="button">Hei</Text>
       <Icon title="something" name="ArrowDown" color="#2EC961" />
       <Tooltip direction="right"  size="medium" variant="dark">
         <Text>HeiToolTip</Text>

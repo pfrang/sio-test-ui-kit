@@ -16,7 +16,7 @@ export const ClientComponents = () => {
       {/* <input type="text" value={value} onChange={handler}/> */}
       <TextInput type="date" name="hei" onChange={handler} value={value} />
       <DatePicker isDateBlocked={(date) => {
-        return false
+        return date.getTime() < new Date().getTime()
       }} onChange={(date) => {
         console.log(date)}
       } />
