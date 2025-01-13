@@ -1,6 +1,6 @@
 "use client"
 
-import { DatePicker, TextInput , Text } from "@sio-it/ui-kit"
+import { DatePicker, TextInput } from "@sio-it/ui-kit"
 import {  useState } from "react"
 
 export const ClientComponents = () => {

@@ -1,5 +1,6 @@
 import { Button, Icon,  Spacer, Text, Tooltip } from "@sio-it/ui-kit"
 import { ClientComponents } from "./client-components";
+import { Grid, GridItem } from "./grid";
 export default function Home() {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -16,6 +17,11 @@ export default function Home() {
       <Tooltip direction="right"  size="medium" variant="dark">
         <Text>HeiToolTip</Text>
       </Tooltip>
+      <Grid>
+        <GridItem >
+          <Text tag="h3" padding={'1'} variant="button">Hei</Text>
+        </GridItem>
+      </Grid>
       <ClientComponents/>
       {/* <Icons.ArrowDown color="#2EC961" /> */}
     </>
