@@ -17,8 +17,8 @@ export default function Home() {
       <Tooltip direction="right"  size="medium" variant="dark">
         <Text>HeiToolTip</Text>
       </Tooltip>
-      <Grid>
-        <GridItem >
+      <Grid >
+        <GridItem start={{mobile: 2, tablet: 6, desktop: 10}}  border={"1px solid"} >
           <Text tag="h3" padding={'1'} variant="button">Hei</Text>
         </GridItem>
       </Grid>
