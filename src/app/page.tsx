@@ -19,7 +19,7 @@ export default function Home() {
         <Text>HeiToolTip</Text>
       </Tooltip>
       <Grid >
-        <GridItem className={gridItem({colSpan: 4, colStart: 2})} border={"1px solid"} >
+        <GridItem className={gridItem({colStart: [2,6,10], colSpan: [2,2,2]})} border={"1px solid"} >
           <Text tag="h3" padding={'1'} variant="button">Hei</Text>
         </GridItem>
       </Grid>
