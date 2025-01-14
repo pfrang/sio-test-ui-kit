@@ -49,17 +49,17 @@ export const GridItem = ({
 
   // const mergedClassName = cx(props.className, cssGrid)
 
-  const cssStyle = css({
-    gridColumnStart: [start?.mobile, start?.tablet, start?.desktop],
-    gridColumn: [
-      span?.mobile ? `span ${span.mobile}` : undefined,
-      span?.tablet ? `span ${span.tablet}` : undefined,
-      span?.desktop ? `span ${span.desktop}` : undefined,
-    ],
-  });
-  
+  // const cssStyle = css({
+  //   gridColumnStart: [start?.mobile, start?.tablet, start?.desktop],
+  //   gridColumn: [
+  //     span?.mobile ? `span ${span.mobile}` : undefined,
+  //     span?.tablet ? `span ${span.tablet}` : undefined,
+  //     span?.desktop ? `span ${span.desktop}` : undefined,
+  //   ],
+  // });
+
   return (
-    <s.Item className={cssStyle} {...props}>
+    <s.Item {...props}>
       {children}
     </s.Item>
   )

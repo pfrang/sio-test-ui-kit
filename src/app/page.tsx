@@ -1,6 +1,7 @@
 import { Button, Icon,  Spacer, Text, Tooltip } from "@sio-it/ui-kit"
 import { ClientComponents } from "./client-components";
 import { Grid, GridItem } from "./grid";
+import { gridItem } from "../../styled-system/patterns";
 export default function Home() {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -18,7 +19,7 @@ export default function Home() {
         <Text>HeiToolTip</Text>
       </Tooltip>
       <Grid >
-        <GridItem start={{mobile: 2, tablet: 6, desktop: 10}}  border={"1px solid"} >
+        <GridItem className={gridItem({colSpan: 4, colStart: 2})} border={"1px solid"} >
           <Text tag="h3" padding={'1'} variant="button">Hei</Text>
         </GridItem>
       </Grid>
