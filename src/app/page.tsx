@@ -1,7 +1,5 @@
-import { Button, Icon,  Spacer, Text, Tooltip } from "@sio-it/ui-kit"
+import { Button, Flex, Grid, GridItem, Heading, Icon,  Spacer, Text, Tooltip } from "@sio-it/ui-kit"
 import { ClientComponents } from "./client-components";
-import { Grid, GridItem } from "./grid";
-import { gridItem } from "../../styled-system/patterns";
 export default function Home() {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -11,18 +9,33 @@ export default function Home() {
   }
   return (
     <>
+      <Heading level={1}>Spacer</Heading>
       <Spacer paddingTop={4} />
-      <Button onClick={handleClick} color={"green.10"} padding={12} width={9} variant="primary" >Hei2</Button>
+      <Heading level={1}>Button</Heading>
+      <Button onClick={handleClick} padding={[6, 8]} variant="primary" >Hei2</Button>
+      <Heading level={1}>Text</Heading>
       <Text tag="h3" padding={'1'} variant="button">Hei</Text>
+      <Heading level={1}>Icon</Heading>
       <Icon title="something" name="ArrowDown" color="#2EC961" />
+      <Heading level={1}>Tooltip</Heading>
       <Tooltip direction="right"  size="medium" variant="dark">
         <Text>HeiToolTip</Text>
       </Tooltip>
-      <Grid >
-        <GridItem className={gridItem({colStart: [2,6,10], colSpan: [2,2,2]})} border={"1px solid"} >
+      <Heading level={1}>Grid</Heading>
+      <Grid>
+        <GridItem border={"1px solid"} >
           <Text tag="h3" padding={'1'} variant="button">Hei</Text>
         </GridItem>
       </Grid>
+
+      <Heading level={1}>Flex</Heading>
+      <Flex flexDirection="column">
+        <Text tag="h3" padding={"1"} variant="button">
+          Flex
+        </Text>
+      </Flex>
+
+
       <ClientComponents/>
       {/* <Icons.ArrowDown color="#2EC961" /> */}
     </>

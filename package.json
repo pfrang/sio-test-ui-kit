@@ -8,11 +8,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "setup": "npm remove @sio-ui/ui-kit && npm uninstall @sio-it/ui-kit && npm install ../ui-kit/sio-it-ui-kit-0.1.3.tgz"
+    "setup": "npm remove @sio-ui/ui-kit && npm uninstall @sio-it/ui-kit && npm install ../ui-kit/sio-it-ui-kit-0.1.4.tgz"
   },
   "dependencies": {
     "@pandacss/dev": "^0.48.1",
-    "@sio-it/ui-kit": "file:../ui-kit/sio-it-ui-kit-0.1.3.tgz",
+    "@sio-it/ui-kit": "file:../ui-kit/sio-it-ui-kit-0.1.4.tgz",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106"
