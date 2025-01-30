@@ -1,4 +1,4 @@
-import { Button, Flex, Grid, GridItem, Heading, Icon,  Spacer, Text, Tooltip } from "@sio-it/ui-kit"
+import { Button, Flex, Grid, GridItem, Heading, Icon,  Spacer, Text, Tooltip, BlockQuote } from "@sio-it/ui-kit"
 import { ClientComponents } from "./client-components";
 export default function Home() {
 
@@ -14,12 +14,17 @@ export default function Home() {
       <Heading level={1}>Button</Heading>
       <Button onClick={handleClick} padding={[6, 8]} variant="primary" >Hei2</Button>
       <Heading level={1}>Text</Heading>
-      <Text tag="h3" padding={'1'} variant="button">Hei</Text>
+      <Text tag="h3" content={<div>heiinni</div>} padding={'1'} variant="button">HeiUti</Text>
       <Heading level={1}>Icon</Heading>
       <Icon title="something" name="ArrowDown" color="#2EC961" />
       <Heading level={1}>Tooltip</Heading>
+      <BlockQuote
+        quote="4 av 10 studenter har alvorlige psykiske plager."
+        quotee="Fra SHOT-undersøkelsen 2018"
+        background={"violetLight"}
+      />
       <Tooltip direction="right"  size="medium" variant="dark">
-        <Text>HeiToolTip</Text>
+        <Text content={<div>content</div>}>HeiToolTip</Text>
       </Tooltip>
       <Heading level={1}>Grid</Heading>
       <Grid>

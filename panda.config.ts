@@ -1,5 +1,5 @@
 import { defineConfig } from '@pandacss/dev'
-import { sioPreset } from '@sio-it/ui-kit/dist/preset'
+import { sioPreset } from '@sio-it/ui-kit/dist/theme/preset'
 
 
 // readon this https://panda-css.com/docs/customization/utilities
