@@ -1,5 +1,6 @@
 import { Button, Flex, Grid, GridItem, Heading, Icon,  Spacer, Text, Tooltip, BlockQuote } from "@sio-it/ui-kit"
 import { ClientComponents } from "./client-components";
+import { Grid3 } from "./grid";
 export default function Home() {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -15,6 +16,11 @@ export default function Home() {
       <Button onClick={handleClick} padding={[6, 8]} variant="primary" >Hei2</Button>
       <Heading level={1}>Text</Heading>
       <Text tag="h3" content={<div>heiinni</div>} padding={'1'} variant="button">HeiUti</Text>
+
+      Grid Tesr
+      <Grid3 background={"violet.1"}>
+        <Text tag="h3" padding={'1'} variant="button">Grid Testtt</Text>
+      </Grid3>
       <Heading level={1}>Icon</Heading>
       <Icon title="something" name="ArrowDown" color="#2EC961" />
       <Heading level={1}>Tooltip</Heading>
