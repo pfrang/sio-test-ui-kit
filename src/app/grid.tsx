@@ -16,10 +16,10 @@ export const Grid3 = ({ children, ...props}: GridProps) => {
   const backgroundColor = useMemo(() => background ? background : "transparent", [background]) 
  
   const className = css(
-    { bg: backgroundColor + "/" + "50" },
+    // { bg: backgroundColor },
     styleProps,
     cssProp
   )
 
-  return <Div {...restProps} className={className}>{children}</Div>
+  return <Div {...restProps} bgOpac={backgroundColor} className={className}>{children}</Div>
 }

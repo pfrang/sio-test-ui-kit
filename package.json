@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "panda:codegen": "panda codegen",
     "setup": "npm remove @sio-ui/ui-kit && npm uninstall @sio-it/ui-kit && npm install ../ui-kit/sio-it-ui-kit-0.1.7.tgz"
   },
   "dependencies": {

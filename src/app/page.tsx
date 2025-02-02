@@ -18,7 +18,7 @@ export default function Home() {
       <Text tag="h3" content={<div>heiinni</div>} padding={'1'} variant="button">HeiUti</Text>
 
       Grid Tesr
-      <Grid3 background={"violet.1"}>
+      <Grid3 bgOpac={"violet.4"}>
         <Text tag="h3" padding={'1'} variant="button">Grid Testtt</Text>
       </Grid3>
       <Heading level={1}>Icon</Heading>

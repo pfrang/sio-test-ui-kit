@@ -2,32 +2,25 @@ import { defineConfig } from '@pandacss/dev'
 import { sioPreset } from '@sio-it/ui-kit/dist/theme/preset'
 
 
-import type { PropertyTransform } from '@pandacss/types'
-export const createColorMixTransform =
-  (prop: string): PropertyTransform =>
-    (value, args) => {
-      const mix = args.utils.colorMix(value)
-      if (mix.invalid) return { [prop]: value }
-      const cssVar = '--mix-' + prop
-      return {
-        [cssVar]: mix.value,
-        [prop]: `var(${cssVar}, ${mix.color})`
-      }
-    }
-
-  
 // readon this https://panda-css.com/docs/customization/utilities
 export default defineConfig({
   presets: [sioPreset],
   // eject: true,
   // preflight: true,
   utilities: {
-    extend: {
-      background: {
-        shorthand: "bg",
-        className: "bg",
-        values: "colors",
-        transform: createColorMixTransform("background"),
+    bgOpac: {
+      className: 'bg-opac',
+      values: 'colors',
+      transform(value, args) {
+
+        // Convert the color to rgba with 50% opacity
+        const mix = args.utils.colorMix(value)
+        if (mix.invalid) return { backgroundColor: value }
+
+        const rgbaValue = mix.value.replace('rgb', 'rgba').replace(')', ', 0.5)')
+        return {
+          backgroundColor: rgbaValue
+        }
       }
     }
   },
