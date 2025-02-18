@@ -1,4 +1,4 @@
-import { Button, Flex, Grid, GridItem, Heading, Icon,  Spacer, Text, Tooltip, BlockQuote } from "@sio-it/ui-kit"
+import { Button, Flex, Grid, GridItem, Heading, Icon,  Spacer, Text, Tooltip, BlockQuote, RichText } from "@sio-it/ui-kit"
 import { ClientComponents } from "./client-components";
 import { Grid3 } from "./grid";
 export default function Home() {
@@ -16,9 +16,8 @@ export default function Home() {
       <Button onClick={handleClick} padding={[6, 8]} variant="primary" >Hei2</Button>
       <Heading level={1}>Text</Heading>
       <Text tag="h3" content={<div>heiinni</div>} padding={'1'} variant="button">HeiUti</Text>
-
       Grid Tesr
-      <Grid3 bgOpac={"violet.4"}>
+      <Grid3 background={"violet.4"}>
         <Text tag="h3" padding={'1'} variant="button">Grid Testtt</Text>
       </Grid3>
       <Heading level={1}>Icon</Heading>
@@ -31,7 +30,14 @@ export default function Home() {
       />
       <Tooltip direction="right"  size="medium" variant="dark">
         <Text content={<div>content</div>}>HeiToolTip</Text>
-      </Tooltip>
+      </Tooltip>      <RichText html="<a>Hei</a>" />
+      <RichText
+        html={
+          '<ol>\n\t<li>Still <u>spørsmål</u> og få svar - helt anonymt</li>\n\t<li>Få råd fra psykolog, lege, fysioterapeut, tannlege og helsesykepleier</li>\n\t<li>Les andres spørsmål og svar</li>\n</ol>\n\n<p><a href="https://google.com">Se og still spørsmål på Studenter spør</a></p>\n<h3>Dette er en h3</h3><p>Den gode nyheter er at du kan få hjelp - SiO Psykisk helse- og rådgivningstjenesten er et lavterskeltilbud for deg som er student i SiO.</p><h2>Also a title</h2><p>Her får du treffe rådgivere og psykologer med spisskompetanse på fagområder som er relevante deg som er student.<br />\n<br />\nHusk at ingen problemer er for små eller for store. Vi hjelper deg med alt fra stress, ensomhet, relasjoner, sorg, dårlig selvtillit, økonomi, studiemestring, nedstemthet, angst, overgrep, rus eller mobbing. For å nevne noen.</p>\n\n<p><strong>Alle studenter i SiO kan bruke våre tilbud:</strong></p>\n\n<ul>\n\t<li>Samtale med rådgiver (kliniske sosionomer og pedagoger)</li>\n\t<li>Parsamtale med rådgiver</li>\n\t<li>Korttidsbehandling med psykolog, psykiater eller psykomotorisk fysioterapeut</li>\n\t<li>Samtale med helsesykepleier</li>\n\t<li>Kurstilbud</li>\n\t<li>Studenter spør (anonym spørsmål- og svartjeneste)</li>\n\t<li>Selvhjelpsverktøy og ressurser (filmer, artikler, lydfiler mm)</li>\n</ul>\n'
+        }
+      />
+
+
       <Heading level={1}>Grid</Heading>
       <Grid>
         <GridItem border={"1px solid"} >
