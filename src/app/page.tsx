@@ -1,7 +1,7 @@
-import { Button, Flex, Grid, GridItem, Heading, Icon,  Spacer, Text, Tooltip, BlockQuote } from "@sio-it/ui-kit"
+import { Button, Flex, Grid, GridItem, Heading, Spacer, Text, Tooltip, BlockQuote, Icon, Icons } from "@sio-it/ui-kit/server"
 import { ClientComponents } from "./client-components";
-import { Grid3 } from "./grid";
 export default function Home() {
+  
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleClick = async (e) => {
@@ -17,17 +17,13 @@ export default function Home() {
       <Heading level={1}>Text</Heading>
       <Text tag="h3" content={<div>heiinni</div>} padding={'1'} variant="button">HeiUti</Text>
 
-      Grid Tesr
-      <Grid3 bgOpac={"violet.4"}>
-        <Text tag="h3" padding={'1'} variant="button">Grid Testtt</Text>
-      </Grid3>
       <Heading level={1}>Icon</Heading>
       <Icon title="something" name="ArrowDown" color="#2EC961" />
       <Heading level={1}>Tooltip</Heading>
       <BlockQuote
         quote="4 av 10 studenter har alvorlige psykiske plager."
         quotee="Fra SHOT-undersøkelsen 2018"
-        background={"violetLight"}
+        background={"violetLight/50"}
       />
       <Tooltip direction="right"  size="medium" variant="dark">
         <Text content={<div>content</div>}>HeiToolTip</Text>
@@ -48,7 +44,7 @@ export default function Home() {
 
 
       <ClientComponents/>
-      {/* <Icons.ArrowDown color="#2EC961" /> */}
+      <Icons.ArrowDown color="#2EC961" />
     </>
   );
 }

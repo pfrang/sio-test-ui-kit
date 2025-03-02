@@ -1,1 +1,2 @@
-@layer reset, base, tokens, recipes, utilities;
+@layer external, reset, base, tokens, recipes, utilities;
+/* @import "react-datepicker/dist/react-datepicker.css" layer(external); */

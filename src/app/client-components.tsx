@@ -1,6 +1,7 @@
 "use client"
 
-import { Collapsible, DatePicker, TextInput, Accordion, Flex, Icons, Heading } from "@sio-it/ui-kit"
+import { Collapsible, DatePicker, Accordion } from "@sio-it/ui-kit/client"
+import { TextInput, Flex, Icons, Heading } from "@sio-it/ui-kit/server"
 import {  useState } from "react"
 
 export const ClientComponents = () => {
@@ -17,7 +18,7 @@ export const ClientComponents = () => {
       <Heading level={1}>TextInput</Heading>
       <TextInput type="date" name="hei" onChange={handler} value={value} />
       <Heading level={1}>DatePicker</Heading>
-      <DatePicker isDateBlocked={(date) => {
+      <DatePicker locale="no" isDateBlocked={(date) => {
         return date.getTime() < new Date().getTime()
       }} onChange={(date) => {
         console.log(date)}

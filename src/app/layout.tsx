@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import './globals.css'
+import "@sio-it/ui-kit/styles.css";
+// import "@sio-it/ui-kit/styles.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
