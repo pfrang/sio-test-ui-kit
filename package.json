@@ -9,12 +9,12 @@
     "start": "next start",
     "lint": "next lint",
     "panda:codegen": "panda codegen",
-    "setup": "npm remove @sio-ui/ui-kit && npm uninstall @sio-it/ui-kit && npm install ../ui-kit/sio-it-ui-kit-0.2.4.tgz",
+    "setup": "npm remove @sio-ui/ui-kit && npm uninstall @sio-it/ui-kit && npm install ../ui-kit/sio-it-ui-kit-0.2.9.tgz",
     "setupRemote": "npm remove @sio-ui/ui-kit && npm uninstall @sio-it/ui-kit && npm install @sio-it/ui-kit"
   },
   "dependencies": {
     "@pandacss/dev": "^0.53.0",
-    "@sio-it/ui-kit": "file:../ui-kit/sio-it-ui-kit-0.2.4.tgz",
+    "@sio-it/ui-kit": "file:../ui-kit/sio-it-ui-kit-0.2.9.tgz",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106"
