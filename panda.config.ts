@@ -22,11 +22,11 @@ export default defineConfig({
   },
 
   jsxFramework: 'react',
-  include: ['./src/**/*.{js,jsx,ts,tsx}', './node_modules/@sio-it/ui-kit/**/*.{js,jsx,ts,tsx}'],
+  include: ['./src/**/*.{js,jsx,ts,tsx}', './node_modules/@sio-it/ui-kit/dist/**/*.js', './node_modules/@sio-it/ui-kit/dist/panda.buildinfo.json'],
   // importMap: "@sio-it/ui-kit",
   // dependencies: ['./node_modules/@sio-it/ui-kit/dist/**/*.{js,jsx,ts,tsx}'],
   // eject: true,
-  // importMap: "'./node_modules/@sio-it/ui-kit/src",
+  // importMap: "'./node_modules/@sio-it/ui-kit/dist/styled-system",
   // importMap
   // outdir: 'styled-system',
 })
